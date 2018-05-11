@@ -18,10 +18,8 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerCommand('extension.sayHello', () => {
         // The code you place here will be executed every time your command is executed
         
-        // replace vscode.window code by a console.log for now
-        console.log('Hello World from vscode command');
         // Display a message box to the user
-        //vscode.window.showInformationMessage('Hello World!');
+        vscode.window.showInformationMessage('Hello World!');
     });
 
     // No disposable for now
